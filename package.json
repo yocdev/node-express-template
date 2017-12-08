@@ -1,6 +1,6 @@
 {
-  "name": "version-service",
-  "version": "1.0.0",
+  "name": "sample",
+  "version": "0.0.1",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
@@ -9,9 +9,7 @@
     "lint": "eslint src/",
     "lint-fix": "eslint --fix src/",
     "test": "jest --watch --coverage --runInBand",
-    "test-ci": "yarn lint && jest --coverage --runInBand",
-    "new-admin": "node scripts/new-admin.js",
-    "new-user": "node scripts/new-user.js"
+    "test-ci": "yarn lint && jest --coverage --runInBand"
   },
   "dependencies": {
     "body-parser": "^1.18.2",
