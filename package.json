@@ -1,0 +1,34 @@
+{
+  "name": "version-service",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "lint": "eslint src/",
+    "lint-fix": "eslint --fix src/",
+    "test": "jest --watch --coverage --runInBand",
+    "test-ci": "yarn lint && jest --coverage --runInBand",
+    "new-admin": "node scripts/new-admin.js",
+    "new-user": "node scripts/new-user.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "express-graphql": "^0.6.11",
+    "graphql": "^0.11.7",
+    "lodash": "^4.17.4",
+    "moment": "^2.19.2",
+    "mongoose": "^4.13.2",
+    "node-fetch": "^1.7.3",
+    "uuid": "^3.1.0",
+    "yup": "^0.23.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.4.1",
+    "jest": "^20.0.4",
+    "nodemon": "^1.11.0"
+  }
+}
